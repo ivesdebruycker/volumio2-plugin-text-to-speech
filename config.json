@@ -1,0 +1,22 @@
+{
+  "accessKeyId":{
+    "type": "string",
+    "value": ""
+  },
+  "secretAccessKey":{
+    "type": "string",
+    "value": ""
+  },
+  "voice":{
+    "type": "string",
+    "value": "Kimberly"
+  },
+  "pauseWhenTalking":{
+    "type": "boolean",
+    "value": true
+  },
+  "announcer":{
+    "type": "boolean",
+    "value": false
+  }
+}

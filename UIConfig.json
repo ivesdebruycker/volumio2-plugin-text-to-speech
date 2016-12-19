@@ -1,0 +1,64 @@
+{
+  "page": {
+    "label": "Text-to-speech Configuration"
+  },
+  "sections": [
+   {
+      "id": "section_tts",
+      "element": "section",
+      "label": "Text-to-speech",
+      "icon": "fa-list-ol",
+      "onSave": {"type":"controller", "endpoint":"miscellanea/text_to_speech", "method":"savePluginOptions"},
+      "saveButton": {
+        "label": "Save",
+        "data": [
+          "accessKeyId",
+          "secretAccessKey",
+          "voice",
+          "pauseWhenTalking",
+          "announcer"
+        ]
+      },
+      "content": [
+        {
+          "id": "accessKeyId",
+          "type":"text",
+          "element": "input",
+          "doc": "AWS access key id",
+          "label": "AWS access key id",
+          "value": ""
+        },
+        {
+          "id":"secretAccessKey",
+          "type":"text",
+          "element": "input",
+          "doc": "AWS secret access key",
+          "label": "AWS secret access key",
+          "value": ""
+        },
+        {
+          "id":"voice",
+          "type":"text",
+          "element": "input",
+          "doc": "Voice",
+          "label": "Voice",
+          "value": ""
+        },
+        {
+          "id":"pauseWhenTalking",
+          "element": "switch",
+          "doc": "Pause when talking",
+          "label": "Pause when talking",
+          "value": true
+        },
+        {
+          "id":"announcer",
+          "element": "switch",
+          "doc": "Announcer",
+          "label": "Automatically announce track info",
+          "value": false
+        }
+      ]
+   }
+  ]
+}

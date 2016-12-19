@@ -1,0 +1,23 @@
+{
+  "name": "text_to_speech",
+  "version": "1.0.0",
+  "description": "Text-to-speech plugin for Volumio2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "volumio_info": {
+    "prettyName": "Text-to-speech",
+    "icon": "fa-list-ol",
+    "plugin_type": "miscellanea",
+    "boot_priority": 10
+  },
+  "dependencies": {
+    "aws-sdk": "^2.7.15",
+    "kew": "^0.7.0",
+    "speaker": "^0.3.0",
+    "v-conf": "^0.10.0"
+  },
+  "author": "Ives De Bruycker",
+  "license": "ISC"
+}
